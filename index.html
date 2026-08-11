@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Traslados privados, corporativos, al aeropuerto y viajes en Lima y provincias con la atención premium de Black Cab Peru.">
+  <meta name="theme-color" content="#070707">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Black Cab Peru | Luxury Transport">
+  <meta property="og:description" content="Transporte privado premium en Lima: aeropuerto, empresas, tours y viajes coordinados.">
+  <title>Black Cab Peru | Luxury Transport</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-premium-v2.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="i-plane" viewBox="0 0 24 24">
+      <path d="M22 2 9.5 9.5 3 7l-2 2 5 4-3 3-2-.5-1.5 1.5 3.5 2 2 3.5L6.5 21 6 19l3-3 4 5 2-2-2.5-6.5L20 5l2-3Z"/>
+    </symbol>
+    <symbol id="i-building" viewBox="0 0 24 24">
+      <path d="M4 21V3h11v6h5v12H4Zm3-3h2v-2H7v2Zm0-5h2v-2H7v2Zm0-5h2V6H7v2Zm5 10h2v-2h-2v2Zm0-5h2v-2h-2v2Zm0-5h2V6h-2v2Zm5 10h1v-2h-1v2Zm0-5h1v-2h-1v2Z"/>
+    </symbol>
+    <symbol id="i-route" viewBox="0 0 24 24">
+      <path d="M5 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm14 12a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM7 6h5a4 4 0 0 1 4 4v1a2 2 0 0 0 2 2h1v-2l4 3-4 3v-2h-1a4 4 0 0 1-4-4v-1a2 2 0 0 0-2-2H7V6Z"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Zm1 5h-2v6l5 3 1-1.7-4-2.3V7Z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M12 2a8 8 0 0 1 8 8c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 0 1 8-8Zm0 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+    </symbol>
+    <symbol id="i-people" viewBox="0 0 24 24">
+      <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM2 21v-3c0-3.3 2.7-6 6-6h2c3.3 0 6 2.7 6 6v3H2Zm15 0v-3c0-1.9-.7-3.6-1.8-5 3.7-.2 6.8 2.3 6.8 5.5V21h-5Z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m9.2 16.4-4.6-4.6L3 13.4l6.2 6.2L21 7.8 19.4 6.2 9.2 16.4Z"/>
+    </symbol>
+    <symbol id="i-suit" viewBox="0 0 24 24">
+      <path d="M12 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm-7 20v-5c0-3.3 2.7-6 6-6h2c3.3 0 6 2.7 6 6v5h-5l-2-7-2 7H5Zm5.6-10 1.4 2 1.4-2h-2.8Z"/>
+    </symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24">
+      <path d="M7 7V5a5 5 0 0 1 10 0v2h3v15H4V7h3Zm3 0h4V5a2 2 0 0 0-4 0v2Z"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 2 21 6v6c0 5.2-3.8 9.6-9 10-5.2-.4-9-4.8-9-10V6l9-4Zm-1.2 14.6 6.4-6.4-1.4-1.4-5 5-2.6-2.6-1.4 1.4 4 4Z"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.9-.9-3.3-1.4-5.5-4.8-5.7-5-.2-.2-1.4-1.9-1.4-3.6s.9-2.6 1.2-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6l1 2.4c.1.2.1.5 0 .7l-.5.8-.7.7c-.2.2-.4.5-.2.9.2.4.9 1.5 2 2.4 1.4 1.3 2.6 1.7 3 1.9.4.2.7.2.9-.1l1.2-1.4c.3-.4.6-.3 1-.2l2.3 1.1c.4.2.6.3.7.5.1.1.1.7-.1 1.4Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell">
+      <a class="brand" href="#inicio" aria-label="Black Cab Peru">
+        <span class="brand-mark">BC</span>
+        <span class="brand-copy">
+          <strong>Black Cab Peru</strong>
+          <small>Luxury Transport</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#conductores">Conductores</a>
+        <a href="#flota">Flota</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-slider" id="inicio" aria-labelledby="hero-title">
+      <article class="hero-slide active" style="background-image:url('assets/hero-premium-v2.png')">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <span class="hero-kicker">Black Cab Peru · Luxury Transport</span>
+          <h1 id="hero-title">Traslados con la elegancia que su viaje merece.</h1>
+          <p>Atención privada, unidades modernas y conductores profesionales para brindar una experiencia superior en cada recorrido.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#servicios">Ver servicios</a>
+            <a class="button button-ghost" href="https://wa.me/51922762633?text=Hola%20Black%20Cab%20Peru%2C%20quisiera%20cotizar%20un%20traslado." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+          <div class="hero-highlights" aria-label="Servicios destacados">
+            <span>Aeropuerto</span>
+            <span>Corporativos</span>
+            <span>Tours y viajes</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="about section-light" id="nosotros">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Bienvenidos a Black Cab Peru</span>
+          <h2>Una experiencia de transporte creada alrededor del pasajero.</h2>
+          <span class="heading-line"></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <img src="assets/hero-premium-v2.png" alt="Van ejecutiva negra para transporte privado" width="1706" height="973" loading="lazy" decoding="async">
+            <span class="about-badge">Luxury Transport</span>
+          </div>
+
+          <div class="about-copy reveal">
+            <span class="mini-title">TRANSPORTE PRIVADO Y TURÍSTICO</span>
+            <p>
+              Black Cab Peru brinda soluciones de movilidad para pasajeros que valoran la
+              puntualidad, la comodidad y una atención profesional. El servicio está orientado
+              a traslados privados, turismo, empresas, familias y grupos.
+            </p>
+            <p>
+              La propuesta combina vans modernas con un estándar de atención formal,
+              cordial y discreto desde la coordinación inicial hasta la llegada al destino.
+            </p>
+
+            <ul class="check-list">
+              <li><svg><use href="#i-check"></use></svg> Seguridad y conducción responsable</li>
+              <li><svg><use href="#i-check"></use></svg> Puntualidad y coordinación previa</li>
+              <li><svg><use href="#i-check"></use></svg> Trato cordial y presentación profesional</li>
+              <li><svg><use href="#i-check"></use></svg> Comodidad para pasajeros y equipaje</li>
+              <li><svg><use href="#i-check"></use></svg> Atención personalizada por WhatsApp</li>
+            </ul>
+
+            <a class="text-link" href="#contacto">Conocer cómo reservar <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-white" id="servicios">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow dark">Nuestros servicios</span>
+          <h2>Soluciones privadas para cada recorrido.</h2>
+          <span class="heading-line dark"></span>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-item reveal">
+            <span class="service-icon"><svg><use href="#i-building"></use></svg></span>
+            <h3>Traslados corporativos</h3>
+            <p>Movilidad para ejecutivos, reuniones, hoteles y actividades empresariales.</p>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-icon"><svg><use href="#i-plane"></use></svg></span>
+            <h3>Traslados al aeropuerto</h3>
+            <p>Recojo y traslado desde o hacia el Aeropuerto Jorge Chávez con coordinación previa.</p>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-icon"><svg><use href="#i-people"></use></svg></span>
+            <h3>Transporte para grupos</h3>
+            <p>Vans cómodas para familias, delegaciones, invitados y grupos privados.</p>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-icon"><svg><use href="#i-route"></use></svg></span>
+            <h3>Tours privados</h3>
+            <p>Recorridos por Lima, Miraflores, Barranco y otros puntos de interés.</p>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-icon"><svg><use href="#i-clock"></use></svg></span>
+            <h3>Servicio por horas</h3>
+            <p>Unidad y conductor disponibles durante el tiempo coordinado para su agenda.</p>
+          </article>
+
+          <article class="service-item reveal">
+            <span class="service-icon"><svg><use href="#i-pin"></use></svg></span>
+            <h3>Viajes a provincia</h3>
+            <p>Traslados privados a Paracas, Ica y otros destinos según la ruta solicitada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comfort-banner">
+      <div class="comfort-overlay"></div>
+      <div class="container comfort-content reveal">
+        <span class="eyebrow">Black Cab Experience</span>
+        <h2>Seguridad y confort en cada servicio.</h2>
+        <p>Vans modernas, coordinación clara y una atención pensada para viajeros exigentes.</p>
+        <a class="button button-outline" href="https://wa.me/51922762633?text=Hola%20Black%20Cab%20Peru%2C%20quisiera%20cotizar%20un%20traslado." target="_blank" rel="noopener">Contactar por WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="drivers section-dark" id="conductores">
+      <div class="container drivers-grid">
+        <div class="drivers-copy reveal">
+          <span class="eyebrow">Nuestros conductores</span>
+          <h2>El servicio premium también depende de quien está al volante.</h2>
+          <p>
+            El estándar de atención de Black Cab Peru prioriza una imagen formal,
+            comunicación cordial, discreción y una conducción responsable. Estos atributos
+            ayudan a que el pasajero se sienta acompañado y seguro durante todo el recorrido.
+          </p>
+
+          <div class="driver-points">
+            <article>
+              <strong>Presentación profesional</strong>
+              <span>Vestimenta cuidada y trato respetuoso desde el primer contacto.</span>
+            </article>
+            <article>
+              <strong>Asistencia al pasajero</strong>
+              <span>Apoyo con el equipaje y orientación durante el punto de encuentro.</span>
+            </article>
+            <article>
+              <strong>Planificación de rutas</strong>
+              <span>Revisión del horario, destino y condiciones del recorrido.</span>
+            </article>
+            <article>
+              <strong>Discreción y confianza</strong>
+              <span>Atención prudente para familias, turistas y clientes corporativos.</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="driver-standard reveal">
+          <div class="driver-symbol">
+            <svg><use href="#i-suit"></use></svg>
+          </div>
+          <span class="driver-label">Estándar de atención</span>
+          <h3>Formalidad que acompaña cada trayecto.</h3>
+
+          <ul>
+            <li><svg><use href="#i-check"></use></svg> Comunicación clara y cordial</li>
+            <li><svg><use href="#i-check"></use></svg> Conducción tranquila y responsable</li>
+            <li><svg><use href="#i-check"></use></svg> Puntualidad en el punto de recojo</li>
+            <li><svg><use href="#i-check"></use></svg> Cuidado de pasajeros y equipaje</li>
+            <li><svg><use href="#i-check"></use></svg> Conocimiento de rutas principales</li>
+          </ul>
+
+          <div class="driver-note">
+            <svg><use href="#i-shield"></use></svg>
+            <p>Cada servicio se coordina previamente para confirmar horario, punto de recojo, destino y requerimientos del pasajero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet section-cream" id="flota">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow dark">Nuestra flota</span>
+          <h2>Vans diseñadas para viajar con mayor comodidad.</h2>
+          <span class="heading-line dark"></span>
+          <p>Opciones para traslados ejecutivos, familias y grupos. Consulte la disponibilidad y capacidad adecuada al momento de reservar.</p>
+        </div>
+
+        <div class="fleet-grid">
+          <article class="fleet-card reveal">
+            <div class="fleet-image">
+              <img src="assets/hero-premium-v2.png" alt="Van ejecutiva negra para traslados premium" width="1706" height="973" loading="lazy" decoding="async">
+              <span>Servicio ejecutivo</span>
+            </div>
+            <div class="fleet-copy">
+              <h3>Van Ejecutiva</h3>
+              <p>Indicada para aeropuerto, hoteles, traslados privados y atención de viajeros.</p>
+              <ul>
+                <li>Imagen moderna y elegante</li>
+                <li>Espacio para pasajeros y equipaje</li>
+                <li>Ideal para servicios urbanos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="fleet-card reveal">
+            <div class="fleet-image">
+              <img src="assets/fleet-travel.jpg" alt="Van de gran capacidad para viajes largos" width="1100" height="1100" loading="lazy" decoding="async">
+              <span>Viajes y turismo</span>
+            </div>
+            <div class="fleet-copy">
+              <h3>Van de Gran Capacidad</h3>
+              <p>Una opción cómoda para tours, full days, viajes a provincia y grupos.</p>
+              <ul>
+                <li>Mayor amplitud interior</li>
+                <li>Adecuada para trayectos largos</li>
+                <li>Comodidad para grupos privados</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="fleet-card reveal">
+            <div class="fleet-image">
+              <img src="assets/fleet-group-v2.png" alt="Van premium de gran capacidad para familias y grupos privados" width="1536" height="1024" loading="lazy" decoding="async">
+              <span>Grupos privados</span>
+            </div>
+            <div class="fleet-copy">
+              <h3>Van para Grupos</h3>
+              <p>Versátil para familias, delegaciones, eventos y servicios programados.</p>
+              <ul>
+                <li>Distribución práctica de asientos</li>
+                <li>Espacio para equipaje</li>
+                <li>Traslados dentro y fuera de Lima</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-numbers">
+      <div class="container number-grid">
+        <article class="number-card reveal">
+          <strong>01</strong>
+          <span>Atención personalizada</span>
+        </article>
+        <article class="number-card reveal">
+          <strong>02</strong>
+          <span>Flota versátil</span>
+        </article>
+        <article class="number-card reveal">
+          <strong>03</strong>
+          <span>Conductores formales</span>
+        </article>
+        <article class="number-card reveal">
+          <strong>04</strong>
+          <span>Reserva directa por WhatsApp</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="passenger-experience">
+      <div class="passenger-overlay"></div>
+      <div class="container passenger-content reveal">
+        <span class="eyebrow">Experiencia del pasajero</span>
+        <h2>“Puntualidad, comodidad y trato profesional en cada etapa del viaje.”</h2>
+        <p>Desde la primera coordinación hasta la llegada, cuidamos los detalles que hacen más tranquilo cada recorrido.</p>
+        <div class="experience-dots"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="contact section-dark" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2>Coordine su próximo traslado con Black Cab Peru.</h2>
+          <p>
+            Escríbanos por WhatsApp con su fecha, punto de recojo, destino y número de pasajeros.
+            Le responderemos para coordinar el servicio.
+          </p>
+          <a class="button button-gold" href="https://wa.me/51922762633?text=Hola%20Black%20Cab%20Peru%2C%20quisiera%20cotizar%20un%20traslado." target="_blank" rel="noopener">
+            <svg class="button-icon"><use href="#i-whatsapp"></use></svg>
+            Iniciar conversación
+          </a>
+        </div>
+
+        <div class="contact-panel reveal">
+          <article>
+            <span>Canal principal</span>
+            <strong><a href="https://wa.me/51922762633?text=Hola%20Black%20Cab%20Peru%2C%20quisiera%20cotizar%20un%20traslado." target="_blank" rel="noopener">+51 922 762 633</a></strong>
+            <p>Consultas y reservas directas por WhatsApp.</p>
+          </article>
+          <article>
+            <span>Cobertura</span>
+            <strong>Lima y viajes coordinados</strong>
+            <p>Aeropuerto, tours, servicios corporativos y rutas a provincia.</p>
+          </article>
+          <article>
+            <span>Atención</span>
+            <strong>Servicios coordinados</strong>
+            <p>Reserve con anticipación para confirmar unidad, horario y ruta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark">BC</span>
+          <span class="brand-copy">
+            <strong>Black Cab Peru</strong>
+            <small>Luxury Transport</small>
+          </span>
+        </a>
+        <p>Transporte privado con una propuesta premium de atención, comodidad y puntualidad.</p>
+      </div>
+
+      <div>
+        <h3>Información</h3>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#conductores">Conductores</a>
+        <a href="#flota">Nuestra flota</a>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <a href="https://wa.me/51922762633?text=Hola%20Black%20Cab%20Peru%2C%20quisiera%20cotizar%20un%20traslado." target="_blank" rel="noopener">WhatsApp: +51 922 762 633</a>
+        <a href="tel:+51922762633">Llamar al +51 922 762 633</a>
+        <a href="#contacto">Solicitar una cotización</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> Black Cab Peru. Todos los derechos reservados.</span>
+      <span>Luxury Transport · Lima, Perú</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/51922762633?text=Hola%20Black%20Cab%20Peru%2C%20quisiera%20cotizar%20un%20traslado." target="_blank" rel="noopener" aria-label="Escribir a Black Cab Peru por WhatsApp">
+    <svg><use href="#i-whatsapp"></use></svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

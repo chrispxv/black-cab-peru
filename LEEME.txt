@@ -1,0 +1,19 @@
+BLACK CAB PERU — LANDING PAGE
+
+Cómo abrir:
+1. Abre index.html en Google Chrome, Edge o Firefox.
+2. Mantén index.html, styles.css, script.js y la carpeta assets en la misma ubicación.
+
+Archivos:
+- index.html: estructura de la página.
+- styles.css: diseño y versión responsive.
+- script.js: menú, animaciones, navegación y botón para volver arriba.
+- assets/: imágenes utilizadas por la página.
+
+Contacto configurado:
+- WhatsApp y teléfono: +51 922 762 633.
+- Los botones de WhatsApp incluyen un mensaje inicial para facilitar la cotización.
+
+Publicación:
+- La web utiliza rutas relativas y puede publicarse en GitHub Pages.
+- Antes de publicar, confirme que los servicios, capacidades de las unidades y cobertura coincidan con la operación real de la empresa.
