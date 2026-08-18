@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chrispxv.github.io/black-cab-peru/sitemap.xml

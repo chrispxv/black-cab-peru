@@ -1,19 +1,16 @@
-BLACK CAB PERU — LANDING PAGE
+BLACK CAB PERU — SITIO WEB
 
-Cómo abrir:
-1. Abre index.html en Google Chrome, Edge o Firefox.
-2. Mantén index.html, styles.css, script.js y la carpeta assets en la misma ubicación.
+Archivo principal: index.html
+Estilos: styles.css
+Interacciones: script.js
+Fotografías y logotipo reales: assets/images/
+Configuración SEO: robots.txt, sitemap.xml y README_SEO.md
 
-Archivos:
-- index.html: estructura de la página.
-- styles.css: diseño y versión responsive.
-- script.js: menú, animaciones, navegación y botón para volver arriba.
-- assets/: imágenes utilizadas por la página.
+Vista publicada:
+https://chrispxv.github.io/black-cab-peru/
 
-Contacto configurado:
-- WhatsApp y teléfono: +51 922 762 633.
-- Los botones de WhatsApp incluyen un mensaje inicial para facilitar la cotización.
+El teléfono y WhatsApp configurados en toda la página son:
++51 922 762 633
 
-Publicación:
-- La web utiliza rutas relativas y puede publicarse en GitHub Pages.
-- Antes de publicar, confirme que los servicios, capacidades de las unidades y cobertura coincidan con la operación real de la empresa.
+Para una prueba local, abra index.html o ejecute un servidor web dentro de esta carpeta.
+No elimine robots.txt ni sitemap.xml al volver a publicar el sitio.
