@@ -458,6 +458,7 @@ ol {
 
 .about-visual {
   position: relative;
+  padding-bottom: 88px;
 }
 
 .about-visual::before {
@@ -480,15 +481,16 @@ ol {
 
 .about-visual img {
   width: 100%;
-  aspect-ratio: 4 / 4.3;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #050505;
 }
 
 .about-badge {
   position: absolute;
   z-index: 2;
-  right: -24px;
-  bottom: 26px;
+  right: 20px;
+  bottom: 0;
   max-width: 160px;
   padding: 18px 20px;
   color: var(--black);
@@ -654,6 +656,26 @@ ol {
 
 .service-card:hover p {
   color: var(--muted-light);
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  color: var(--gold-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-link + .service-link {
+  margin-left: 14px;
+}
+
+.service-card:hover .service-link {
+  color: var(--gold-light);
 }
 
 .experience-banner {
@@ -1242,6 +1264,7 @@ ol {
 
   .about-badge {
     right: -8px;
+    bottom: 0;
   }
 
   .about-copy h2,
@@ -1263,6 +1286,10 @@ ol {
 
   .service-number {
     margin-bottom: 30px;
+  }
+
+  .service-link + .service-link {
+    margin-left: 0;
   }
 
   .experience-banner {
@@ -1343,7 +1370,8 @@ ol {
   }
 
   .about-badge {
-    bottom: 18px;
+    right: 8px;
+    bottom: 0;
     max-width: 132px;
     padding: 13px 14px;
     font-size: 1.02rem;

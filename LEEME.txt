@@ -1,16 +1,28 @@
-BLACK CAB PERU — SITIO WEB
+BLACK CAB PERU — SITIO WEB ESTÁTICO
 
-Archivo principal: index.html
-Estilos: styles.css
-Interacciones: script.js
-Fotografías y logotipo reales: assets/images/
-Configuración SEO: robots.txt, sitemap.xml y README_SEO.md
+Dominio oficial:
+https://blackcabperu.com/
 
-Vista publicada:
-https://chrispxv.github.io/black-cab-peru/
+Hosting:
+BanaHosting/cPanel, dentro de public_html
 
-El teléfono y WhatsApp configurados en toda la página son:
+Archivos principales:
+- index.html: portada.
+- styles.css: diseño general responsive.
+- seo-pages.css: estilos compartidos de las páginas SEO.
+- script.js: menú, animaciones y navegación.
+- assets/images/: fotografías y logotipo reales.
+- robots.txt y sitemap.xml: configuración para buscadores.
+- README_SEO.md: publicación y Google Search Console.
+
+Páginas SEO:
+- traslado-aeropuerto-lima/index.html
+- transporte-privado-lima/index.html
+- transporte-ejecutivo-lima/index.html
+- tours-lima/index.html
+- viajes-paracas/index.html
+
+Contacto configurado:
 +51 922 762 633
 
-Para una prueba local, abra index.html o ejecute un servidor web dentro de esta carpeta.
-No elimine robots.txt ni sitemap.xml al volver a publicar el sitio.
+Al publicar, copie el contenido de esta carpeta dentro de public_html sin cambiar la estructura de las subcarpetas.
